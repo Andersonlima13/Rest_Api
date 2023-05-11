@@ -13,9 +13,9 @@ namespace api_c_.Data
         public DbSet<UserModel> users { get; set; } 
         public DbSet<TaskModel> tasks { get; set; }
 
-        protected override void OnMOdelCreating()
+        protected override void OnMOdelCreating(ModelBuilder modelBuilder)
         {
-
+            base.OnModelCreating(modelBuilder);
         }
 
 
